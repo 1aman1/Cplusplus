@@ -22,11 +22,10 @@ int main() {
   print( const_cast<char* >(a));
   const A ob(20);
   ob.get();
-  //object is non0modifable
-  //const_cast takes reference to stirp off the const_ness
+  //object is nonmodifable
+  //const_cast takes reference to strip off the const_ness
   //const_cast argument can be->reference/pointer/pointer to memory object
   //ob.set(4);
-	const_cast<A&>(ob).set(40);
-
-	return 9;
+  const_cast<A&>(ob).set(40);
+  return 9;
 }
