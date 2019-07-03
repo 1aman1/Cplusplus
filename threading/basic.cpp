@@ -3,12 +3,15 @@
 #include <unistd.h>
 
 using namespace std;
+//pthread_mutex_t is the lock var, that takes lock
 struct box {
   int x;
   pthread_mutex_t lk;
   pthread_cond_t  ct;
-  box(): x(0){}
+  box(): x(0)
+  {}
 };
+
 //format says, only a void pointer can be sent to threadFn, which can be put to use after casting
 void *threadFunction(void *tmp) {
   box* x = (box*)(tmp);
@@ -51,6 +54,6 @@ int main() {
   pthread_join(pid1, (void**)(&y));
   pthread_join(pid2, (void**)(&y));
 
-  cout <<"final value : " << V.x << endl; 
+  cout  << "final value : " << V.x << endl; 
   return 0;
 }
