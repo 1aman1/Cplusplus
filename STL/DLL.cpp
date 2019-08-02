@@ -1,6 +1,8 @@
 // A C++ program to demonstrate STL sort() using
 // our own comparator
-#include<bits/stdc++.h>
+#include<iostream>
+//#include<algorithm>
+#include<list>
 using namespace std;
 
 void print( list<int> list1 ) {
@@ -142,4 +144,3 @@ int main() {
 
   return 0;
 }
-
