@@ -1,10 +1,17 @@
-#include<iostream>
+//#include<bits/stdc++.h>
 #include<queue>
+#include<iostream>
+#include<algorithm>
 
 using namespace std;
 
+void shoutOut( string Here ) {
+  std::transform( Here.begin(), Here.end(), Here.begin(), ::toupper );
+  cout << Here << endl;
+}
+
 int main() {
-  cout << __FUNCTION__ << endl;
+  shoutOut( __FUNCTION__ );
   queue<int> Myqueue;
 
   cout << "is queue empty[0/1] : " << Myqueue.empty() << endl;
@@ -33,3 +40,4 @@ int main() {
   //	system("pause");
 	return 0;
 }
+ 
