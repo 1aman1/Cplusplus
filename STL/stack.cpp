@@ -1,4 +1,7 @@
-#include<bits/stdc++.h>
+//#include<bits/stdc++.h>
+#include<stack>
+#include<iostream>
+#include<algorithm>
 
 using namespace std;
 
