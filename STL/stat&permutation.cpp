@@ -57,8 +57,8 @@ int main() {
 	cout << "\ndistance " << distance(vec.begin(), find(vec.begin(), vec.end(), 3));
 
 	cout << endl;
-	system("pause");
+	//system("pause");
 	return 0;
 }
 // one might give a word for /*PRINT(VEC);*/
-// but this subtly helps in going fast thru the code.
+// but this subtly helps in going fast thru the code
